@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Website dengan HTML, CSS, dan JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="headerText">Selamat Datang di Website Kami</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan yang berfokus pada pengembangan perangkat lunak.</p>
+        </section>
+
+        <section class="content">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Desain Web</li>
+                <li>Pengembangan Aplikasi Mobile</li>
+                <li>Pemrograman Backend</li>
+                <li>Pengujian Perangkat Lunak</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Contoh Website</p>
+    </footer>
+
+    <script>
+        // Contoh JavaScript sederhana
+        console.log("Hello, world!");
+
+        // Fungsi untuk mengubah teks header
+        function changeHeader() {
+            const header = document.getElementById('headerText');
+            header.textContent = 'Selamat Datang di Website Kami (Diubah oleh JavaScript)';
+        }
+
+        // Mengubah teks header saat halaman dimuat
+        window.addEventListener('load', changeHeader);
+    </script>
+</body>
+</html>
