@@ -17,5 +17,5 @@ function changeBannerImage() {
     banner.style.backgroundImage = `url(${bannerImages[currentImageIndex]})`;
     currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
 }
-
+<
 setInterval(changeBannerImage, 5000); // Change image every 5 seconds
